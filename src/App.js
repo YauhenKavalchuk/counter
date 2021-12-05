@@ -2,7 +2,9 @@ import { Counter } from './components/counter/counter';
 
 const App = () => (
   <>
-    <Counter />
+    <main>
+      <Counter />
+    </main>
   </>
 );
 

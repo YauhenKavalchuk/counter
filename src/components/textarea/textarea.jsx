@@ -1,3 +1,5 @@
+import styles from './textarea.module.scss';
+
 export const Textarea = ({ value, onChange }) => {
 
   const handleChange = (e) => {
@@ -6,6 +8,7 @@ export const Textarea = ({ value, onChange }) => {
 
   return (
     <textarea
+      className={styles.textarea}
       onChange={handleChange}
       value={value}
     />
