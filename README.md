@@ -12,3 +12,6 @@
 ### Быстрый старт:
 - Установите зависимости: `yarn install`
 - Запустите проект: `yarn start`
+
+[sponsor]: https://www.youtube.com/channel/UCE9ODjNIkOHrnSdkYWLfYhg/join
+[patron]: https://www.patreon.com/YauhenKavalchuk
