@@ -2,14 +2,26 @@ import { useState } from "react";
 
 import { Textarea } from '../textarea/textarea';
 import { Count } from '../count/count';
+import { CopyButton } from '../copy-button/copy-button';
 
-export const Counter = ({ value, limit }) => {
+import styles from './counter.module.scss';
+
+export const Counter = () => {
   const [ text, setText ] = useState('');
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(text.trim());
+  };
 
   return (
     <>
-      <Count value={text} />
-      <Textarea value={text} onChange={setText} />
+      <header className={styles.header}>
+          <Count value={text} />
+          <CopyButton onClick={handleCopy} />
+        </header>
+      <section className={styles.section}>
+        <Textarea value={text} onChange={setText} />
+      </section>
     </>
   );
 }
