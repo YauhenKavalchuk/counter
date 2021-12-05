@@ -10,6 +10,8 @@ body {
 
 main {
   min-height: 100vh;
+  display: grid;
+  grid-auto-rows: auto 1fr;
   background: linear-gradient(45deg, #4e54c8, #8f94fb);
   color: #fff;
 }
