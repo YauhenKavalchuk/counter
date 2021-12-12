@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, FC } from "react";
 
 import { Textarea } from '../textarea';
 import { Count } from '../count';
@@ -6,10 +6,10 @@ import { CopyButton } from '../copy-button';
 
 import styles from './counter.module.scss';
 
-export const Counter = () => {
+export const Counter:FC = () => {
   const [ text, setText ] = useState('');
 
-  const handleCopy = () => {
+  const handleCopy = ():void => {
     navigator.clipboard.writeText(text);
   };
 
