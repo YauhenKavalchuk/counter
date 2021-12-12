@@ -1,10 +1,10 @@
 import { useState, FC } from "react";
 
-import { Textarea } from '../textarea';
-import { Count } from '../count';
-import { CopyButton } from '../copy-button';
+import { Textarea } from "components/textarea";
+import { Count } from "components/count";
+import { CopyButton } from "components/copy-button";
 
-import styles from './counter.module.scss';
+import styles from "./counter.module.scss";
 
 export const Counter:FC = () => {
   const [ text, setText ] = useState('');

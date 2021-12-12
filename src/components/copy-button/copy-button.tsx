@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import styles from './copy-button.module.scss';
+import styles from "./copy-button.module.scss";
 
 type CopyButtonProps = {
   onClick: () => void,

@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import styles from './count.module.scss';
+import styles from "./count.module.scss";
 
 type CountProps = {
   value?: string,

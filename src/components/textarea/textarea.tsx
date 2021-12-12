@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import styles from './textarea.module.scss';
+import styles from "./textarea.module.scss";
 
 type TextareaProps = {
   value: string,
