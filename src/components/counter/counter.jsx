@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Textarea } from '../textarea/textarea';
+import { Textarea } from '../textarea';
 import { Count } from '../count';
 import { CopyButton } from '../copy-button';
 

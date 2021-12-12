@@ -1,3 +1,6 @@
+$accent-color: #00ffa1;
+$base-color: #00ffff;
+
 .textarea {
   width: 100%;
   padding: 10px;
@@ -7,4 +10,19 @@
   background-color: rgba(0, 0, 0, 0.4);
   resize: none;
   color: #fff;
+
+  &::-webkit-scrollbar {
+    width: 15px;
+    background: #101124;
+  }
+
+  &::-webkit-scrollbar-track {
+    border: 5px solid rgba(255, 255, 255, 0.25);
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, $accent-color, $base-color);
+    border-radius: 15px;
+  }
 }
