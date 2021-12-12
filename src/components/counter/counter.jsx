@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 import { Textarea } from '../textarea/textarea';
-import { Count } from '../count/count';
-import { CopyButton } from '../copy-button/copy-button';
+import { Count } from '../count';
+import { CopyButton } from '../copy-button';
 
 import styles from './counter.module.scss';
 
